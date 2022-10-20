@@ -1,0 +1,82 @@
+<?php
+//Actualizando los datos según el id del Menú
+ModificarPaciente($_POST['id'],$_POST['user'],$_POST['fecha'],$_POST['expediente'],$_POST['nombre'],$_POST['edad'],$_POST['resultado_sexo'],
+$_POST['fecha_nac'],$_POST['resultado_civil'],$_POST['resultado_escolaridad'],$_POST['direccion'],$_POST['ocupacion'],$_POST['telefono'],
+$_POST['email'],$_POST['motivo_consulta'],$_POST['diagnostico'],$_POST['enf1'],$_POST['enf2'],$_POST['enf3'],$_POST['enf4'],$_POST['enf5'],
+$_POST['enf6'],$_POST['enf7'],$_POST['enf8'],$_POST['enf9'],$_POST['otro_problema'],$_POST['padece_enf'],$_POST['toma_med'],
+$_POST['medicamento'],$_POST['dosis_med'],$_POST['desde_cuando'],$_POST['toma1'],$_POST['toma2'],$_POST['toma3'],$_POST['toma4'],
+$_POST['cirugia'],$_POST['ant1'],$_POST['ant2'],$_POST['ant3'],$_POST['ant4'],$_POST['ant5'],$_POST['ant6'],$_POST['resultado_actividad'],
+$_POST['tipo_ej'],$_POST['frecuencia_ej'],$_POST['duracion_ej'],$_POST['cuando_inicio'],$_POST['alcohol'],$_POST['tabaco'],$_POST['cafe'],
+$_POST['comidasxdia'],$_POST['entre_comidas'],$_POST['entresemana1'],$_POST['entresemana2'],$_POST['entresemana3'],$_POST['finsemana1'],
+$_POST['finsemana2'],$_POST['finsemana3'],$_POST['quien_prepara'],$_POST['resultado_apetito'],$_POST['mas_hambre'],$_POST['al_preferidos'],
+$_POST['al_nogustan'],$_POST['al_malestar'],$_POST['alergia'],$_POST['al_alergia'],$_POST['sup_com'],$_POST['suplemento'],$_POST['dosis_sup'],
+$_POST['porq_sup'],$_POST['cambio_com'],$_POST['consumo_varia'],$_POST['agrega'],$_POST['grasa1'],$_POST['grasa2'],$_POST['grasa3'],
+$_POST['grasa4'],$_POST['otra_grasa'],$_POST['dieta_esp'],$_POST['cuantas_dietas'],$_POST['tipo_dieta'],$_POST['hace_cuanto'],
+$_POST['cuanto_tiempo'],$_POST['razon'],$_POST['apego'],$_POST['obt_resultados'],$_POST['med_bajar'],$_POST['medic_bajar'],
+$_POST['alimento1'],$_POST['frecuencia1'],$_POST['alimento2'],$_POST['frecuencia2'],$_POST['alimento3'],$_POST['frecuencia3'],
+$_POST['alimento4'],$_POST['frecuencia4'],$_POST['alimento5'],$_POST['frecuencia5'],$_POST['alimento6'],$_POST['frecuencia6'],
+$_POST['alimento7'],$_POST['frecuencia7'],$_POST['alimento8'],$_POST['frecuencia8'],$_POST['alimento9'],$_POST['frecuencia9'],
+$_POST['vasos_agua'],$_POST['vasos_bebidas'],$_POST['dato1'],$_POST['dato2'],$_POST['dato3'],$_POST['dato4'],$_POST['dato5'],$_POST['dato6'],
+$_POST['dato7'],$_POST['dato8'],$_POST['dato9'],$_POST['dato10'],$_POST['dato11'],$_POST['dato12'],$_POST['dato13'],$_POST['dato14'],
+$_POST['dato15'],$_POST['dato16'],$_POST['dato17'],$_POST['dato18'],$_POST['dato19'],$_POST['dato20'],$_POST['dato21'],$_POST['dato22'],
+$_POST['dato23'],$_POST['dato24'],$_POST['dato25'],$_POST['dato26'],$_POST['dato27'],$_POST['dato28'],$_POST['tmr'],$_POST['eta'],
+$_POST['af'],$_POST['total'],$_POST['hc1'],$_POST['hc2'],$_POST['hc3'],$_POST['prot1'],$_POST['prot2'],$_POST['prot3'],$_POST['lip1'],
+$_POST['lip2'],$_POST['lip3'],$_POST['medicion1'],$_POST['fecha1'],$_POST['valor1'],$_POST['medicion2'],$_POST['fecha2'],$_POST['valor2'],
+$_POST['medicion3'],$_POST['fecha3'],$_POST['valor3'],$_POST['medicion4'],$_POST['fecha4'],$_POST['valor4'],$_POST['medicion5'],
+$_POST['fecha5'],$_POST['valor5'],$_POST['medicion6'],$_POST['fecha6'],$_POST['valor6'],$_POST['medicion7'],$_POST['fecha7'],$_POST['valor7'],
+$_POST['medicion8'],$_POST['fecha8'],$_POST['valor8'],$_POST['medicion9'],$_POST['fecha9'],$_POST['valor9']);
+
+function ModificarPaciente($id,$user,$fecha,$expediente,$nombre,$edad,$sexo,$fecha_nac,$estado_civil,
+$escolaridad,$direccion,$ocupacion,$telefono,$email,$motivo_consulta,$diagnostico,$enf1,$enf2,$enf3,$enf4,$enf5,
+$enf6,$enf7,$enf8,$enf9,$otro_problema,$padece_enf,$toma_med,$medicamento,$dosis_med,$desde_cuando,$toma1,$toma2,
+$toma3,$toma4,$cirugia,$ant1,$ant2,$ant3,$ant4,$ant5,$ant6,$actividad,$tipo_ej,$frecuencia_ej,$duracion_ej,
+$cuando_inicio,$alcohol,$tabaco,$cafe,$comidasxdia,$entre_comidas,$entresemana1,$entresemana2,$entresemana3,$finsemana1,
+$finsemana2,$finsemana3,$quien_prepara,$apetito,$mas_hambre,$al_preferidos,$al_nogustan,$al_malestar,$alergia,$al_alergia,
+$sup_com,$suplemento,$dosis_sup,$porq_sup,$cambio_com,$consumo_varia,$agrega,$grasa1,$grasa2,$grasa3,$grasa4,
+$otra_grasa,$dieta_esp,$cuantas_dietas,$tipo_dieta,$hace_cuanto,$cuanto_tiempo,$razon,$apego,$obt_resultados,$med_bajar,
+$medic_bajar,$alimento1,$frecuencia1,$alimento2,$frecuencia2,$alimento3,$frecuencia3,$alimento4,$frecuencia4,$alimento5,
+$frecuencia5,$alimento6,$frecuencia6,$alimento7,$frecuencia7,$alimento8,$frecuencia8,$alimento9,$frecuencia9,$vasos_agua,
+$vasos_bebidas,$dato1,$dato2,$dato3,$dato4,$dato5,$dato6,$dato7,$dato8,$dato9,$dato10,$dato11,$dato12,$dato13,
+$dato14,$dato15,$dato16,$dato17,$dato18,$dato19,$dato20,$dato21,$dato22,$dato23,$dato24,$dato25,$dato26,$dato27,
+$dato28,$tmr,$eta,$af,$total,$hc1,$hc2,$hc3,$prot1,$prot2,$prot3,$lip1,$lip2,$lip3,$medicion1,$fecha1,
+$valor1,$medicion2,$fecha2,$valor2,$medicion3,$fecha3,$valor3,$medicion4,$fecha4,$valor4,$medicion5,$fecha5,$valor5,
+$medicion6,$fecha6,$valor6,$medicion7,$fecha7,$valor7,$medicion8,$fecha8,$valor8,$medicion9,$fecha9,$valor9){
+    $con = mysqli_connect("localhost", "root", "", "datos");
+    
+    $sen = "UPDATE px_adulto SET id='".$id."', nombre_usuario='".$user."', fecha='".$fecha."', expediente='".$expediente."', nombre='".$nombre."', 
+    edad='".$edad."', sexo='".$sexo."', fecha_nac='".$fecha_nac."', estado_civil='".$estado_civil."', escolaridad='".$escolaridad."',
+    direccion='".$direccion."', ocupacion='".$ocupacion."', telefono='".$telefono."', email='".$email."', motivo_consulta='".$motivo_consulta."',
+    diagnostico='".$diagnostico."', enf1='".$enf1."', enf2='".$enf2."', enf3='".$enf3."', enf4='".$enf4."',enf5='".$enf5."', 
+    enf6='".$enf6."', enf7='".$enf7."', enf8='".$enf8."', enf9='".$enf9."',otro_problema='".$otro_problema."', padece_enf='".$padece_enf."', 
+    toma_med='".$toma_med."', medicamento='".$medicamento."', dosis_med='".$dosis_med."',desde_cuando='".$desde_cuando."', toma1='".$toma1."', 
+    toma2='".$toma2."', toma3='".$toma3."', toma4='".$toma4."',cirugia='".$cirugia."', ant1='".$ant1."', ant2='".$ant2."', ant3='".$ant3."', 
+    ant4='".$ant4."', ant5='".$ant5."', ant6='".$ant6."', actividad='".$actividad."', tipo_ej='".$tipo_ej."', frecuencia_ej='".$frecuencia_ej."', 
+    duracion_ej='".$duracion_ej."',cuando_inicio='".$cuando_inicio."',alcohol='".$alcohol."',tabaco='".$tabaco."',cafe='".$cafe."',comidasxdia='".$comidasxdia."',
+    entre_comidas='".$entre_comidas."',entresemana1='".$entresemana1."',entresemana2='".$entresemana2."',entresemana3='".$entresemana3."',
+    finsemana1='".$finsemana1."',finsemana2='".$finsemana2."',finsemana3='".$finsemana3."',quien_prepara='".$quien_prepara."',apetito='".$apetito."',
+    mas_hambre='".$mas_hambre."',al_preferidos='".$al_preferidos."',al_nogustan='".$al_nogustan."',al_malestar='".$al_malestar."',alergia='".$alergia."',
+    al_alergia='".$al_alergia."',sup_com='".$sup_com."',suplemento='".$suplemento."',dosis_sup='".$dosis_sup."',porq_sup='".$porq_sup."',cambio_com='".$cambio_com."',
+    consumo_varia='".$consumo_varia."',agrega='".$agrega."',grasa1='".$grasa1."',grasa2='".$grasa2."',grasa3='".$grasa3."',grasa4='".$grasa4."',
+    otra_grasa='".$otra_grasa."',dieta_esp='".$dieta_esp."',cuantas_dietas='".$cuantas_dietas."',tipo_dieta='".$tipo_dieta."',hace_cuanto='".$hace_cuanto."',
+    cuanto_tiempo='".$cuanto_tiempo."',razon='".$razon."',apego='".$apego."',obt_resultados='".$obt_resultados."',med_bajar='".$med_bajar."',
+    medic_bajar='".$medic_bajar."',alimento1='".$alimento1."',frecuencia1='".$frecuencia1."',alimento2='".$alimento2."',frecuencia2='".$frecuencia2."',
+    alimento3='".$alimento3."',frecuencia3='".$frecuencia3."',alimento4='".$alimento4."',frecuencia4='".$frecuencia4."',alimento5='".$alimento5."',
+    frecuencia5='".$frecuencia5."',alimento6='".$alimento6."',frecuencia6='".$frecuencia6."',alimento7='".$alimento7."',frecuencia7='".$frecuencia7."',
+    alimento8='".$alimento8."',frecuencia8='".$frecuencia8."',alimento9='".$alimento9."',frecuencia9='".$frecuencia9."',vasos_agua='".$vasos_agua."',
+    vasos_bebidas='".$vasos_bebidas."',dato1='".$dato1."',dato2='".$dato2."',dato3='".$dato3."',dato4='".$dato4."',dato5='".$dato5."',dato6='".$dato6."',
+    dato7='".$dato7."',dato8='".$dato8."',dato9='".$dato9."',dato10='".$dato10."',dato11='".$dato11."',dato12='".$dato12."',
+    dato13='".$dato13."',dato14='".$dato14."',dato15='".$dato15."',dato16='".$dato16."',dato17='".$dato17."',dato18='".$dato18."',dato19='".$dato19."',
+    dato20='".$dato20."',dato21='".$dato21."',dato22='".$dato22."',dato23='".$dato23."',dato24='".$dato24."',dato25='".$dato25."',dato26='".$dato26."',
+    dato27='".$dato27."',dato28='".$dato28."',tmr='".$tmr."',eta='".$eta."',af='".$af."',total='".$total."',hc1='".$hc1."',hc2='".$hc2."',hc3='".$hc3."',
+    prot1='".$prot1."',prot2='".$prot2."',prot3='".$prot3."',lip1='".$lip1."',lip2='".$lip2."',lip3='".$lip3."',medicion1='".$medicion1."',fecha1='".$fecha1."',
+    valor1='".$valor1."',medicion2='".$medicion2."',fecha2='".$fecha2."',valor2='".$valor2."',medicion3='".$medicion3."',fecha3='".$fecha3."',
+    valor3='".$valor3."',medicion4='".$medicion4."',fecha4='".$fecha4."',valor4='".$valor4."',medicion5='".$medicion5."',fecha5='".$fecha5."',valor5='".$valor5."',
+    medicion6='".$medicion6."',fecha6='".$fecha6."',valor6='".$valor6."',medicion7='".$medicion7."',fecha7='".$fecha7."',valor7='".$valor7."',medicion8='".$medicion8."',
+    fecha8='".$fecha8."',valor8='".$valor8."',medicion9='".$medicion9."',fecha9='".$fecha9."',valor9='".$valor9."'
+    WHERE id='".$id."' ";
+
+    //Ejecutar la query
+    $ej = mysqli_query($con, $sen) or die(mysqli_error() . " ($sen)");
+
+    echo header("location: pacientes.php");
+}
