@@ -1,0 +1,492 @@
+@import url(comprimir.css);
+
+h1{
+    text-align: center;
+}
+
+/* Alinear h2 e input para borrar */
+.eliminar_comidas h2, input[type=button]{
+    display: inline-block;
+}
+
+
+/*SECCIÓN DE ELABORACIÓN DE MENÚ*/
+/*Tabla kcal totales*/
+.kcal_totales{
+    margin: 0px 50px;
+    padding: 10px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    text-align: center;
+}
+
+.kcal_totales thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.kcal_totales input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.kcal_totales th td{
+    padding: 6px 9px;
+}
+
+.kcal_totales tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.kcal_totales tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.kcal_totales tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}
+
+/* Tabla de distribución por tiempo de comida */
+.seccion_f{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.t_distribucion{
+    flex: 1;
+    min-width: 700px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.d_xcomida{
+    flex: 2;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.tabla_distribucion{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    text-align: center;
+}
+
+.tabla_distribucion thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla_distribucion input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tabla_distribucion th td{
+    padding: 6px 9px;
+}
+
+.tabla_distribucion tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla_distribucion tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.tabla_distribucion tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}
+
+.distxcomida{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    text-align: center;
+}
+
+.distxcomida thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.distxcomida input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.distxcomida th td{
+    padding: 6px 9px;
+}
+
+.distxcomida tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.distxcomida tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.distxcomida tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}
+.copiar_datos input.copiar_datos{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Crear Menú*/
+.elaborar_menu{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.fieldset_nutrientes div{
+    margin: 2px;
+    display: inline-block;
+    text-align: center;
+}
+
+.eliminar_datos{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 50px;
+}
+
+
+/*Tablas para introducir el nombre de la comida*/
+.nombre_com{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    text-align: center;
+}
+
+.nombre_com thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nombre_com input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nombre_com th td{
+    padding: 6px 9px;
+}
+
+.nombre_com tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.nombre_com tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.nombre_com tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}
+
+
+/* Tablas de la sección editar_menu.php y elaborar_menu.php */
+.tabla1{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    text-align: center;
+}
+
+.tabla1 thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla1 input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tabla1 th td{
+    padding: 6px 9px;
+}
+
+.tabla1 tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla1 tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.tabla1 tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}
+
+.tabla6{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    text-align: center;
+}
+
+.tabla6 thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla6 input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tabla6 th td{
+    padding: 6px 9px;
+}
+
+.tabla6 tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla6 tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.tabla6 tbody tr:last-of-type{
+    border-bottom: 2px solid #800080;
+}
+
+/*MENÚ SEMANAL*/
+.tabla_s{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.seccionmenu{
+    flex: 1;
+    min-width: 300px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.formulario_opcion1 button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left:300px;
+    top: -150px;
+}
+
+.datos_menu .nombre_menu{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.nombre_menu{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    text-align: center;
+}
+
+.nombre_menu thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nombre_menu input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nombre_menu th td {
+    padding: 6px 9px;
+}
+
+.nombre_menu tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.nombre_menu tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.nombre_menu tbody tr:last-of-type {
+    border-bottom: 2px solid #800080;
+}
+
+
+.tablasemanal{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.tablasemanal thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tablasemanal th td {
+    padding: 6px 9px;
+}
+
+.textarea{
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.tablasemanal tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tablasemanal tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.tablasemanal tbody tr:last-of-type {
+    border-bottom: 2px solid #800080;
+}
+
+/* BOTONES */
+.btnDescargar{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;  
+}
+
+.enviar_menu{ 
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.guardar_cambios{
+    padding: 10px 40px;
+    margin-top: 10px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}

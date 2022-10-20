@@ -1,0 +1,247 @@
+/*SECCIÓN DE FÓRMULAS*/
+.seccion_datos{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.parte1 input, .parte2 input{
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 14px;
+    outline: none;
+    text-align: center;
+}
+
+.parte1{
+    flex: 1;
+    min-width: 650px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.parte2{
+    flex: 2;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.fieldset_datospx input{
+    margin: 2.5px;
+    align-items: center;
+}
+
+.fieldset_indicadores input{
+    margin: 2.5px;
+    align-items: center;
+}
+
+/*Estilo tabla de resultados*/
+.resultados_f{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    text-align: center;
+}
+
+.resultados_f thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.resultados_f th td{
+    padding: 6px 9px;
+}
+
+.resultados_f input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.resultados_f tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.resultados_f tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.resultados_f tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}
+
+.select_af{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+.select_kcal{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+/*Tabla Kcal totales*/
+.kcal_totales{
+    margin: 0px 50px;
+    padding: 10px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    text-align: center;
+}
+
+.kcal_totales thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.kcal_totales input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.kcal_totales th td{
+    padding: 6px 9px;
+}
+
+.kcal_totales tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.kcal_totales tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.kcal_totales tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}
+
+
+/* Tabla de porcentaje macronutrientes */
+.macros{
+    margin: 0px 50px;
+    padding: 10px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    text-align: center;
+}
+
+.macros thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.macros input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.macros th td{
+    padding: 6px 9px;
+}
+
+.macros tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.macros tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.macros tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}
+
+.obtener_datos{
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 230px;
+}
+
+/*TABLA CONVERTIR PORCIENTO*/
+.convertir_porciento{
+    margin: 0px 50px;
+    padding: 10px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    text-align: center;
+}
+
+.convertir_porciento thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.convertir_porciento input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.convertir_porciento th td{
+    padding: 6px 9px;
+}
+
+.convertir_porciento tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.convertir_porciento tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.convertir_porciento tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}

@@ -1,0 +1,83 @@
+.seccion_analisis{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.escoge_sexo div{
+    margin: 2.5px;
+    align-items: center;
+    display: inline-block;
+}
+
+.eliminar_datos{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 50px;
+}
+
+.botones button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 14px;
+    background: #800080;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Tabla de Análisis Clínicos*/
+.tabla_analisis{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    text-align: center;
+}
+
+.tabla_analisis thead tr{
+    background-color: #800080;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tabla_analisis input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tabla_analisis th td{
+    padding: 6px 9px;
+}
+
+.tabla_analisis tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla_analisis tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.tabla_analisis tbody tr:last-of-type(even){
+    border-bottom: 2px solid #800080;
+}

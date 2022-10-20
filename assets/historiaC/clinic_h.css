@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Birthstone+Bounce&display=swap');
+/*Letra titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Birthstone+Bounce&family=Open+Sans:wght@500&family=PT+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(155, 174, 200);
+}
+
+h1{
+    font-family: 'Birthstone', cursive;
+    font-size: 60px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+div#body1{
+    position: absolute;
+    right: 150px;
+    left: 150px;
+    min-height: 370px;
+    min-width: 450px;
+    background-color: rgb(155, 174, 200);
+}
+
+
+/* INPUT TABLAS INPUT TYPE:TEXT */
+div#body1 input[type=text]{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+div#body1 input[type=text]:focus {
+    outline: none;
+    border: none;
+    color: black;
+}
+
+/* PRIMERA PARTE */
+div#datos_px{
+    padding: 30px;
+    width: 50%;
+    min-height: 370px;
+    min-width: 450px;
+    /*Color bonito #C0C0C0*/
+    background-color: white;
+    float: left;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+/*Estilos input div*/
+div#datos_px input{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    /*
+    border-color: #0495c4;
+    */
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#datos_px input:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+/*Estilos select div*/
+div#datos_px select{
+    margin: 3px;
+    padding: 6px 9px;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#datos_px select:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+div#datos_px select option{
+    text-align: center;
+    background-color: white;
+}
+
+div#notas{
+    padding: 30px;
+    width: 50%;
+    min-height: 370px;
+    min-width: 450px;
+    background-color: white;
+    float: right;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+/*Estilos textarea div*/
+div#notas textarea{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#notas textarea:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+/*Estilos label div*/
+div#notas label{
+    margin: 3px;
+    padding: 0px;
+    background: none;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* SEGUNDA PARTE */
+div#anteced{
+    padding: 30px;
+    width: 100%;
+    min-height: 370px;
+    min-width: 450px;
+    /*Color bonito #C0C0C0*/
+    background-color: white;
+    float: left;
+}
+
+/*Estilos input div*/
+div#anteced input{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#anteced input:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+/*Estilos label*/
+div#anteced label{
+    margin: 3px;
+    padding: 6px 9px;
+    background-color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* TERCERA PARTE */
+div#estilo_vida{
+    padding: 30px;
+    width: 100%;
+    min-height: 300px;
+    min-width: 450px;
+    /*Color bonito #C0C0C0*/
+    background-color: white;
+    float: left;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/*Estilos select div*/
+div#estilo_vida select{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#estilo_vida select:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+div#estilo_vida select option{
+    text-align: center;
+    background-color: white;
+}
+
+/*Estilos input div*/
+div#estilo_vida input{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#estilo_vida input:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+/*Estilos label*/
+div#estilo_vida label{
+    margin: 3px;
+    padding: 6px 9px;
+    background-color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* CUARTA PARTE */
+div#indicadores_d{
+    padding: 30px;
+    width: 100%;
+    min-height: 300px;
+    min-width: 450px;
+    /*Color bonito #C0C0C0*/
+    background-color: white;
+    float: left;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/*Estilos select div*/
+div#indicadores_d select{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#indicadores_d select:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+div#indicadores_d select option{
+    text-align: center;
+    background-color: white;
+}
+
+/*Estilos input div*/
+div#indicadores_d input{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#indicadores_d input:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+/*Estilos label*/
+div#indicadores_d label{
+    margin: 3px;
+    padding: 6px 9px;
+    background-color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* QUINTA PARTE */
+div#frecconsumo_al{
+    padding: 30px;
+    width: 100%;
+    min-height: 300px;
+    min-width: 450px;
+    /*Color bonito #C0C0C0*/
+    background-color: white;
+    float: left;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/*Estilos input div*/
+div#frecconsumo_al input{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#frecconsumo_al input:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+/*Estilos label div*/
+div#frecconsumo_al label{
+    margin: 3px;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* SEXTA PARTE */
+div#indicadores{
+    padding: 30px;
+    width: 100%;
+    min-height: 300px;
+    min-width: 450px;
+    /*Color bonito #C0C0C0*/
+    background-color: white;
+    float: left;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/*Estilos input div*/
+div#indicadores input{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* SÉPTIMA PARTE */
+div#interp_datos{
+    padding: 30px;
+    width: 100%;
+    min-height: 300px;
+    min-width: 450px;
+    /*Color bonito #C0C0C0*/
+    background-color: white;
+    float: left;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/*Estilos input div*/
+div#interp_datos input{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #2d9fd9;
+    color: black;
+}
+
+div#interp_datos input:focus {
+    outline: none;
+    border: 1px solid #ec9422;
+    color: black;
+}
+
+/*Estilos label*/
+div#interp_datos label{
+    margin: 3px;
+    padding: 6px 9px;
+    background-color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* OCTAVA PARTE */
+div#indicadores_bioquimicos{
+    padding: 30px;
+    width: 100%;
+    min-height: 300px;
+    min-width: 450px;
+    /*Color bonito #C0C0C0*/
+    background-color: white;
+    float: left;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/*Estilos input div*/
+div#indicadores_bioquimicos input{
+    margin: 3px;
+    padding: 6px 9px;
+    background: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; 
+    font-size: 24px;
+    background: white;
+    color: #0495c4;
+    text-align: center;
+}
+
+.divs{
+    background: white;
+    font-size: 16px;
+}
+
+.divs label{
+    margin: 6px;
+    display: inline-block;
+    text-align: justify;
+    background: white;
+    font-size: 16px;
+}
+
+.tablas{
+    margin: 10px;
+}
+
+.tablas th, td{
+    background-color: white;
+    border-color: white;
+}
+
+@media only screen and (max-width: 1600px) {
+    .alimento{
+        width: 650px;
+    }
+
+    .datos{
+        width: 250px;
+    }
+
+    .frecuencia{
+        width: 250px;
+    }
+
+    .input_bioq{
+        width: 300px;
+    }
+
+    .input_enc{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .alimento{
+        width: 200px;
+    }
+
+    .datos{
+        width: 150px;
+    }
+
+    .frecuencia{
+        width: 150px;
+    }
+
+    .input_bioq{
+        width: 105px;
+    }
+
+    .input_enc{
+        width: 90px;
+    }
+}
+
+div#body1 #boton{
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+div#body1 .guardar_datos{
+    padding: 10px 60px;
+    margin-top: 10px;
+    border: none;
+    font-size: 16px;
+    background: #ec9422;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}

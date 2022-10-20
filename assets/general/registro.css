@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+@media (min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
+
+
+
+header a{
+    float: right;
+    font-size: 20px;
+    margin: 9px 0px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/*SECCIÓN LOGIN-REGISTRO*/
+#login_registro{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("../imagenes/compu_frutas.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.login_registro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+
+.login_registro h2{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+}
+
+.login_registro input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+}
+
+.login_registro p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login_registro a{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+button{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    background: crimson;
+    cursor: pointer;
+}
+
+.icon-eye{
+    position: absolute;
+    height: 4%;
+    top: 60.5%;
+    right: 25px;
+    transform: translate(-50%);
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.icon-eye:hover{
+    opacity: 0.8;
+}

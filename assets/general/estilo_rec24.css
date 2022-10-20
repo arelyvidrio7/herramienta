@@ -1,0 +1,255 @@
+#titulo{
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+/* Alinear h2 e input para borrar */
+.eliminar_comidas h2, input[type=button]{
+    display: inline-block;
+}
+
+/*SECCIÓN DE ELABORACIÓN DE MENÚ*/
+.elaborar_menu{
+    display:flex;
+    /*Centrar la sección*/
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.eliminar_datos{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: olive;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 100px;
+}
+
+
+/*Tablas para introducir el nombre de la comida*/
+.nombre_com{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    text-align: center;
+}
+
+.nombre_com thead tr{
+    background-color: olivedrab;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nombre_com input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nombre_com th td{
+    padding: 6px 9px;
+}
+
+.nombre_com tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.nombre_com tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.nombre_com tbody tr:last-of-type(even){
+    border-bottom: 2px solid olivedrab;
+}
+
+
+/*Tablas para un día*/
+.tabla1{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    text-align: center;
+}
+
+.tabla1 thead tr{
+    background-color: olivedrab;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tabla1 input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tabla1 th td{
+    padding: 6px 9px;
+}
+
+.tabla1 tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla1 tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.tabla1 tbody tr:last-of-type(even){
+    border-bottom: 2px solid olivedrab;
+}
+
+
+.tabla6{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    left: 300px;
+}
+
+.tabla6 thead tr{
+    background-color: olivedrab;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla6 input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tabla6 th td{
+    padding: 6px 9px;
+}
+
+.tabla6 tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabla6 tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.tabla6 tbody tr:last-of-type{
+    border-bottom: 2px solid olivedrab;
+}
+
+.enviar_menu{ 
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: olivedrab;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 80px;  
+    top: -80px; 
+}
+
+/* CAMBIO DE TAMAÑO INPUTS*/
+@media (min-width:460px){
+    .tabla1 .tag, .tabla1 .grupo{
+        width: 120px;
+    }
+    
+    .tabla1 .unidad{
+        width: 50px;
+    }
+
+    .tabla1 .cant, .tabla1 .porcion, .tabla1 .nut1, .tabla1 .nut2, .tabla1 .nut3, .tabla1 .nut4, .tabla1 .total{
+        width: 35px;
+    }
+
+    .tabla6 .total{
+        width: 35px;
+    }
+
+    .tabla1 input{
+        font-size: 10px;
+    }
+
+    .tabla1 thead tr{
+        font-size: 11px;
+    }
+
+    .nombre_com thead tr{
+        font-size: 11px;
+    }
+    
+    .nombre_com input{
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width:1024px){
+
+    .tabla1 .tag, .tabla1 .grupo{
+        width: 250px;
+    }
+
+    .tabla1 .unidad{
+        width: 100px;
+    }
+
+    .tabla1 .cant, .tabla1 .porcion, .tabla1 .nut1, .tabla1 .nut2, .tabla1 .nut3, .tabla1 .nut4, .tabla1 .total{
+        width: 60px;
+    }
+
+    .tabla6 .total{
+        width: 60px;
+    }
+
+    .tabla1 input{
+        font-size: 14px;
+    }
+
+    .tabla1 thead tr{
+        font-size: 15px;
+    }
+
+    .nombre_com thead tr{
+        font-size: 15px;
+    }
+    
+    .nombre_com input{
+        font-size: 14px;
+    }
+}

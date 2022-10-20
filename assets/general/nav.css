@@ -1,0 +1,56 @@
+/*ESTILOS GENERALES*/
+nav ul{
+    list-style: none;
+    padding: 0px;
+}
+
+nav li{
+    line-height: 3rem;
+    position: relative;
+}
+
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: arial;
+    color: #ddd;
+    display: block;
+    padding: 0 1.5rem;
+    transition: .4s;
+}
+
+nav a:hover{
+    background: rgba(0,0,0,.5);
+    color: #ddd;
+}
+
+nav label{
+    text-decoration: none;
+    font-family: arial;
+    color: #ddd;
+    display: block;
+    padding: 0 1.5rem;
+    transition: .4s;
+}
+
+nav li ul{
+    display: none;
+}
+
+nav li:hover ul{
+    display: block;
+}
+
+/*PRIMER NIVEL*/
+nav ul{
+    background: #333;
+    display: table;
+    width: 100%;
+}
+
+nav > ul > li{
+    float: left;
+}

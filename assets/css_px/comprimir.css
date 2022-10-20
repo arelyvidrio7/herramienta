@@ -1,0 +1,105 @@
+/* CAMBIO DE TAMAÑO INPUTS*/
+@media (min-width:400px){
+    .tabla1 .autocompletar{
+        width: 120px;
+        font-size: 10px;
+    }
+
+    .tabla1 .porcion{
+        width: 30px;
+        font-size: 10px;
+    }
+
+    .tabla1 .grupo{
+        width: 80px;
+        font-size: 10px;
+    }
+    
+    .tabla1 .cantidad{
+        width: 75px;
+        font-size: 10px;
+    }
+
+    .tabla1 .t60{
+        width: 30px;
+        font-size: 10px;
+    }
+
+    .tabla6 .t60{
+        width: 30px;
+        font-size: 10px;
+    }
+
+    .tabla1 thead tr{
+        font-size: 11px;
+    }
+
+    .tabla6 thead tr{
+        font-size: 11px;
+    }
+
+    .tabla6 tbody tr{
+        font-size: 10px;
+    }
+
+    .nombre_com thead tr{
+        font-size: 11px;
+    }
+    
+    .nombre_com input{
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width:1024px){
+    .tabla1 .autocompletar{
+        width: 250px;
+        font-size: 14px;
+    }
+
+    .tabla1 .porcion{
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .tabla1 .grupo{
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .tabla1 .cantidad{
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .tabla1 .t60{
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .tabla6 .t60{
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .tabla1 thead tr{
+        font-size: 15px;
+    }
+
+    .tabla6 thead tr{
+        font-size: 15px;
+    }
+
+    .tabla6 tbody tr{
+        font-size: 14px;
+    }
+
+    .nombre_com thead tr{
+        font-size: 15px;
+    }
+    
+    .nombre_com input{
+        font-size: 14px;
+    }
+}

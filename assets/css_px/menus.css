@@ -1,0 +1,119 @@
+.s_menus{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.tabla_menus{
+    flex: 1;
+    min-width: 400px;
+}
+
+.menus{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+    text-align: center;
+}
+
+.menus thead tr{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 4px solid #f3f3f3;
+}
+
+.menus input{
+    border: none;
+    outline: none;
+    padding: 6px 9px;
+    background: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.menus th td {
+    padding: 6px 9px;
+}
+
+.menus tbody tr {
+    border-bottom: 2px solid #f3f3f3;
+}
+
+.menus tbody tr:nth-of-type(even){
+    background-color: white;
+}
+
+.btnEditar{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: yellow;
+    color: black;
+    cursor: pointer;
+    outline: none;  
+}
+
+.btnEliminar{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    outline: none;  
+}
+
+.btnPdf{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: green;
+    color: white;
+    cursor: pointer;
+    outline: none;  
+}
+
+/* BOTÓN AGREGAR */
+.agregar{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 14px;
+    background: green;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.ag{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 1600px) {
+    .agregar{
+        position: relative;
+        left: 260px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .agregar{
+        position: relative;
+        left: 30px;
+    }
+
+}
